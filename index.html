@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hermes - Luxury handbags crafted with timeless elegance and exceptional craftsmanship. Discover premium designer bags, totes, and accessories.">
+    <meta name="keywords" content="luxury bags, designer handbags, premium leather bags, luxury accessories, Hermes">
+    <meta property="og:title" content="Hermes - Luxury Handbags & Accessories">
+    <meta property="og:description" content="Discover luxury handbags designed with timeless elegance and exceptional craftsmanship.">
+    <meta property="og:type" content="website">
+    <title>Hermes - Luxury Handbags & Accessories</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-top">
+            <div class="container">
+                <div class="navbar-top-content">
+                    <span>Free worldwide shipping on orders over $500</span>
+                    <div class="navbar-top-links">
+                        <a href="#contact">Contact</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-main">
+            <div class="container">
+                <div class="navbar-main-content">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="#" class="logo" onclick="showPage('home')">HERMÈS</a>
+                    <div class="nav-links" id="navLinks">
+                        <a href="#" onclick="showPage('home')" class="active">Home</a>
+                        <a href="#" onclick="showPage('shop')">Shop</a>
+                        <a href="#" onclick="showPage('collections')">Collections</a>
+                        <a href="#" onclick="showPage('about')">About</a>
+                        <a href="#" onclick="showPage('contact')">Contact</a>
+                    </div>
+                    <div class="nav-icons">
+                        <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                        <a href="#" class="wishlist-icon"><i class="far fa-heart"></i></a>
+                        <a href="#" onclick="showPage('cart')" class="cart-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="page-home" class="page active">
+            <div class="hero">
+                <div class="hero-background" style="background-image: url('https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20fashion%20model%20carrying%20elegant%20designer%20handbag%20in%20minimalist%20high-end%20studio%20setting%2C%20soft%20lighting%2C%20premium%20lifestyle%20photography&image_size=landscape_16_9');"></div>
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <p class="hero-subtitle">NEW ARRIVALS</p>
+                        <h1 class="hero-title">Crafted for Those Who Appreciate Excellence</h1>
+                        <p class="hero-description">Discover luxury handbags designed with timeless elegance and exceptional craftsmanship.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary" onclick="showPage('shop')">Shop Collection</a>
+                            <a href="#" class="btn btn-secondary" onclick="showPage('shop')">Explore New Arrivals</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="trust-section">
+                <div class="container">
+                    <div class="trust-grid">
+                        <div class="trust-item">
+                            <i class="fas fa-gem"></i>
+                            <h4>Premium Materials</h4>
+                            <p>Finest leathers sourced globally</p>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Secure Checkout</h4>
+                            <p>100% secure transactions</p>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-globe"></i>
+                            <h4>Worldwide Shipping</h4>
+                            <p>Delivered to your door</p>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-undo"></i>
+                            <h4>Easy Returns</h4>
+                            <p>30-day return policy</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured-collections">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-subtitle">Curated Selection</p>
+                        <h2 class="section-title">Featured Collections</h2>
+                    </div>
+                    <div class="collections-grid">
+                        <div class="collection-card" onclick="showPage('collections')">
+                            <div class="collection-image">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=elegant%20luxury%20handbag%20collection%20in%20premium%20leather%2C%20high-end%20fashion%20photography&image_size=square_hd" alt="Handbags">
+                            </div>
+                            <div class="collection-content">
+                                <h3>Handbags</h3>
+                                <p>Iconic designs for every occasion</p>
+                                <a href="#" class="collection-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="collection-card" onclick="showPage('collections')">
+                            <div class="collection-image">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20tote%20bag%20premium%20leather%20professional%20elegant%20design&image_size=square_hd" alt="Tote Bags">
+                            </div>
+                            <div class="collection-content">
+                                <h3>Tote Bags</h3>
+                                <p>Spacious and sophisticated</p>
+                                <a href="#" class="collection-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="collection-card" onclick="showPage('collections')">
+                            <div class="collection-image">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=designer%20crossbody%20bag%20luxury%20fashion%20accessory&image_size=square_hd" alt="Crossbody Bags">
+                            </div>
+                            <div class="collection-content">
+                                <h3>Crossbody Bags</h3>
+                                <p>Elegance meets functionality</p>
+                                <a href="#" class="collection-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="collection-card" onclick="showPage('collections')">
+                            <div class="collection-image">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20travel%20bags%20premium%20luggage%20set%20elegant%20design&image_size=square_hd" alt="Travel Bags">
+                            </div>
+                            <div class="collection-content">
+                                <h3>Travel Bags</h3>
+                                <p>Journey in style</p>
+                                <a href="#" class="collection-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="best-sellers">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-subtitle">Most Loved</p>
+                        <h2 class="section-title">Best Sellers</h2>
+                    </div>
+                    <div class="products-grid" id="bestSellersGrid"></div>
+                </div>
+            </section>
+
+            <section class="why-choose">
+                <div class="container">
+                    <div class="why-choose-content">
+                        <div class="why-choose-text">
+                            <p class="section-subtitle">Our Philosophy</p>
+                            <h2 class="section-title">Why Choose Hermès</h2>
+                            <div class="why-choose-grid">
+                                <div class="why-choose-item">
+                                    <div class="why-choose-icon">01</div>
+                                    <h4>Artisan Craftsmanship</h4>
+                                    <p>Each piece is meticulously handcrafted by master artisans with decades of experience.</p>
+                                </div>
+                                <div class="why-choose-item">
+                                    <div class="why-choose-icon">02</div>
+                                    <h4>Premium Leather</h4>
+                                    <p>Sourced from the finest tanneries in France and Italy.</p>
+                                </div>
+                                <div class="why-choose-item">
+                                    <div class="why-choose-icon">03</div>
+                                    <h4>Timeless Design</h4>
+                                    <p>Classic silhouettes that transcend trends and generations.</p>
+                                </div>
+                                <div class="why-choose-item">
+                                    <div class="why-choose-icon">04</div>
+                                    <h4>Exclusive Collections</h4>
+                                    <p>Limited editions and pieces you won't find anywhere else.</p>
+                                </div>
+                                <div class="why-choose-item">
+                                    <div class="why-choose-icon">05</div>
+                                    <h4>Global Shipping</h4>
+                                    <p>Delivering luxury to over 150 countries worldwide.</p>
+                                </div>
+                                <div class="why-choose-item">
+                                    <div class="why-choose-icon">06</div>
+                                    <h4>Luxury Packaging</h4>
+                                    <p>Every order arrives in our signature gift-ready packaging.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-choose-image">
+                            <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20fashion%20workshop%20artisan%20crafting%20leather%20handbag%2C%20elegant%20craftsmanship%20scene&image_size=portrait_4_3" alt="Artisan Craftsmanship">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="new-arrivals">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-subtitle">Fresh From The Atelier</p>
+                        <h2 class="section-title">New Arrivals</h2>
+                    </div>
+                    <div class="products-grid" id="newArrivalsGrid"></div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="container">
+                    <div class="section-header centered">
+                        <p class="section-subtitle">What Our Clients Say</p>
+                        <h2 class="section-title">Testimonials</h2>
+                    </div>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The quality is absolutely exceptional. My Birkin bag arrived in perfect condition and the craftsmanship is beyond compare. Worth every penny."</p>
+                            <div class="testimonial-author">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=elegant%20portrait%20of%20sophisticated%20woman&image_size=square" alt="Sarah M.">
+                                <div class="author-info">
+                                    <h5>Sarah Mitchell</h5>
+                                    <span class="verified"><i class="fas fa-check-circle"></i> Verified Purchase</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I've been a collector for years. The attention to detail and the luxury packaging makes every purchase feel like a special occasion."</p>
+                            <div class="testimonial-author">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=professional%20portrait%20of%20elegant%20man&image_size=square" alt="James K.">
+                                <div class="author-info">
+                                    <h5>James Kim</h5>
+                                    <span class="verified"><i class="fas fa-check-circle"></i> Verified Purchase</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Timeless elegance that never goes out of style. The investment piece I'll cherish for a lifetime."</p>
+                            <div class="testimonial-author">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=sophisticated%20woman%20portrait%20elegant&image_size=square" alt="Elena R.">
+                                <div class="author-info">
+                                    <h5>Elena Rossi</h5>
+                                    <span class="verified"><i class="fas fa-check-circle"></i> Verified Purchase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="instagram-gallery">
+                <div class="container">
+                    <div class="section-header centered">
+                        <p class="section-subtitle">@hermes</p>
+                        <h2 class="section-title">Follow Our Journey</h2>
+                    </div>
+                    <div class="instagram-grid">
+                        <div class="instagram-item">
+                            <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20fashion%20lifestyle%20photography%20designer%20bag&image_size=square" alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="instagram-item">
+                            <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=elegant%20flat%20lay%20luxury%20accessories%20perfume%20jewelry&image_size=square" alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="instagram-item">
+                            <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=fashion%20model%20street%20style%20luxury%20outfit&image_size=square" alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="instagram-item">
+                            <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20interior%20design%20elegant%20aesthetic&image_size=square" alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="instagram-item">
+                            <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=high%20end%20fashion%20details%20leather%20craftsmanship&image_size=square" alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                        <div class="instagram-item">
+                            <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20travel%20lifestyle%20elegant%20destination&image_size=square" alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <div class="newsletter-text">
+                            <h2>Join the World of Hermès</h2>
+                            <p>Subscribe for early access to new releases, exclusive offers, and luxury inspiration.</p>
+                        </div>
+                        <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="page-shop" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Shop</h1>
+                    <p>Discover our complete collection of luxury handbags</p>
+                </div>
+            </div>
+            <div class="shop-page">
+                <div class="container">
+                    <div class="shop-layout">
+                        <aside class="shop-filters">
+                            <button class="filter-toggle" id="filterToggle">
+                                Filters <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="filters-content" id="filtersContent">
+                                <div class="filter-group">
+                                    <h4>Category</h4>
+                                    <div class="filter-options">
+                                        <label><input type="checkbox" name="category" value="handbags" checked> Handbags</label>
+                                        <label><input type="checkbox" name="category" value="totes" checked> Tote Bags</label>
+                                        <label><input type="checkbox" name="category" value="crossbody" checked> Crossbody</label>
+                                        <label><input type="checkbox" name="category" value="travel" checked> Travel</label>
+                                        <label><input type="checkbox" name="category" value="limited" checked> Limited Edition</label>
+                                    </div>
+                                </div>
+                                <div class="filter-group">
+                                    <h4>Price</h4>
+                                    <div class="filter-options">
+                                        <label><input type="checkbox" name="price" value="under1000"> Under $1,000</label>
+                                        <label><input type="checkbox" name="price" value="1000to3000"> $1,000 - $3,000</label>
+                                        <label><input type="checkbox" name="price" value="3000to5000"> $3,000 - $5,000</label>
+                                        <label><input type="checkbox" name="price" value="over5000"> $5,000+</label>
+                                    </div>
+                                </div>
+                                <div class="filter-group">
+                                    <h4>Color</h4>
+                                    <div class="filter-colors">
+                                        <span class="color-option" style="background: #111111;" title="Black"></span>
+                                        <span class="color-option" style="background: #8B4513;" title="Brown"></span>
+                                        <span class="color-option" style="background: #C8A45D;" title="Gold"></span>
+                                        <span class="color-option" style="background: #F5F0E8;" title="Beige"></span>
+                                        <span class="color-option" style="background: #DC143C;" title="Red"></span>
+                                        <span class="color-option" style="background: #1E3A5F;" title="Navy"></span>
+                                    </div>
+                                </div>
+                                <div class="filter-group">
+                                    <h4>Material</h4>
+                                    <div class="filter-options">
+                                        <label><input type="checkbox" name="material" value="leather"> Leather</label>
+                                        <label><input type="checkbox" name="material" value="canvas"> Canvas</label>
+                                        <label><input type="checkbox" name="material" value="exotic"> Exotic Skin</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="shop-products">
+                            <div class="shop-topbar">
+                                <p class="product-count"><span id="productCount">8</span> Products</p>
+                                <select class="sort-select">
+                                    <option>Featured</option>
+                                    <option>Price: Low to High</option>
+                                    <option>Price: High to Low</option>
+                                    <option>Newest</option>
+                                </select>
+                            </div>
+                            <div class="products-grid" id="shopProductsGrid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-product" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <a href="#" onclick="showPage('home')">Home</a> /
+                        <a href="#" onclick="showPage('shop')">Shop</a> /
+                        <span id="productBreadcrumb">Product</span>
+                    </nav>
+                </div>
+            </div>
+            <div class="product-detail" id="productDetail"></div>
+        </section>
+
+        <section id="page-collections" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Collections</h1>
+                    <p>Explore our curated luxury collections</p>
+                </div>
+            </div>
+            <div class="collections-page">
+                <div class="container">
+                    <div class="collection-hero">
+                        <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20collection%20display%20elegant%20handbags%20premium%20setting&image_size=landscape_16_9" alt="Collections">
+                        <div class="collection-hero-content">
+                            <h2>Timeless Elegance</h2>
+                            <p>Every piece tells a story of craftsmanship, heritage, and unparalleled luxury.</p>
+                        </div>
+                    </div>
+                    <div class="collections-grid">
+                        <div class="collection-card large" onclick="showPage('shop')">
+                            <div class="collection-image">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=iconic%20luxury%20handbag%20collection%20premium%20leather&image_size=landscape_4_3" alt="Iconic Handbags">
+                            </div>
+                            <div class="collection-content">
+                                <span class="collection-badge">Iconic</span>
+                                <h3>Iconic Handbags</h3>
+                                <p>Our most celebrated designs</p>
+                                <a href="#" class="collection-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="collection-card" onclick="showPage('shop')">
+                            <div class="collection-image">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=limited%20edition%20luxury%20bags%20exclusive%20design&image_size=square_hd" alt="Limited Editions">
+                            </div>
+                            <div class="collection-content">
+                                <span class="collection-badge">Exclusive</span>
+                                <h3>Limited Editions</h3>
+                                <p>Rare pieces for discerning collectors</p>
+                                <a href="#" class="collection-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="collection-card" onclick="showPage('shop')">
+                            <div class="collection-image">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=everyday%20luxury%20tote%20bags%20elegant%20design&image_size=square_hd" alt="Everyday Luxury">
+                            </div>
+                            <div class="collection-content">
+                                <span class="collection-badge">Essentials</span>
+                                <h3>Everyday Luxury</h3>
+                                <p>Elegance for your daily journey</p>
+                                <a href="#" class="collection-link">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-about" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+            <div class="about-page">
+                <section class="about-hero">
+                    <div class="container">
+                        <div class="about-hero-content">
+                            <p class="section-subtitle">Our Heritage</p>
+                            <h2>A Legacy of Excellence</h2>
+                            <p>Founded on the principles of unparalleled craftsmanship and timeless design, Hermès represents the pinnacle of luxury fashion. Each creation is a testament to our commitment to excellence, where tradition meets innovation in perfect harmony.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-story">
+                    <div class="container">
+                        <div class="story-grid">
+                            <div class="story-image">
+                                <img src="https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=elegant%20Parisian%20luxury%20boutique%20interior%20heritage%20fashion&image_size=portrait_4_3" alt="Our Story">
+                            </div>
+                            <div class="story-content">
+                                <p class="section-subtitle">Since 1837</p>
+                                <h3>The Hermès Story</h3>
+                                <p>Our journey began in Paris, where a passion for exceptional materials and masterful technique laid the foundation for what would become one of the world's most revered luxury houses.</p>
+                                <p>Every piece is crafted with the same dedication that defined our earliest creations—an unwavering commitment to quality that has stood the test of time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="craftsmanship">
+                    <div class="container">
+                        <div class="section-header centered">
+                            <p class="section-subtitle">The Art of Making</p>
+                            <h2 class="section-title">Craftsmanship</h2>
+                        </div>
+                        <div class="craftsmanship-grid">
+                            <div class="craft-step">
+                                <div class="step-number">01</div>
+                                <h4>Material Selection</h4>
+                                <p>Only the finest leathers from renowned tanneries are chosen, each inspected for perfection.</p>
+                            </div>
+                            <div class="craft-step">
+                                <div class="step-number">02</div>
+                                <h4>Hand Cutting</h4>
+                                <p>Master artisans meticulously cut each piece by hand, ensuring precision and respect for the material.</p>
+                            </div>
+                            <div class="craft-step">
+                                <div class="step-number">03</div>
+                                <h4>Saddle Stitching</h4>
+                                <p>The iconic saddle stitch, done entirely by hand, creates a seam that's both beautiful and durable.</p>
+                            </div>
+                            <div class="craft-step">
+                                <div class="step-number">04</div>
+                                <h4>Finishing</h4>
+                                <p>Each piece receives hours of meticulous finishing, polishing, and quality control.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="page-contact" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <p>We're here to assist you with any inquiries</p>
+                </div>
+            </div>
+            <div class="contact-page">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Flagship Store</h4>
+                                    <p>24 Rue du Faubourg Saint-Honoré<br>75008 Paris, France</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+33 1 40 17 47 17</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>concierge@hermes.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Hours</h4>
+                                    <p>Monday - Saturday: 10:00 AM - 7:00 PM<br>Sunday: 11:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form-wrapper">
+                            <h3>Send us a Message</h3>
+                            <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Subject</label>
+                                    <select>
+                                        <option>General Inquiry</option>
+                                        <option>Order Status</option>
+                                        <option>Returns</option>
+                                        <option>Product Information</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Message</label>
+                                    <textarea rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-faq" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>FAQ</h1>
+                    <p>Find answers to commonly asked questions</p>
+                </div>
+            </div>
+            <div class="faq-page">
+                <div class="container">
+                    <div class="faq-section">
+                        <h3>Orders</h3>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                How do I place an order?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Simply browse our collections, select your desired items, add them to your cart, and proceed through our secure checkout process.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Can I modify or cancel my order?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Orders can be modified or cancelled within 1 hour of placement. Please contact our concierge service immediately for assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-section">
+                        <h3>Shipping</h3>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What are your shipping options?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We offer complimentary worldwide shipping on all orders over $500. Express shipping is available for an additional fee.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                How long will delivery take?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Standard delivery takes 3-7 business days. Express delivery arrives within 1-3 business days.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-section">
+                        <h3>Returns</h3>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What is your return policy?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We accept returns within 30 days of delivery. Items must be in their original condition with all tags and packaging intact.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-cart" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Shopping Cart</h1>
+                </div>
+            </div>
+            <div class="cart-page">
+                <div class="container">
+                    <div class="cart-layout">
+                        <div class="cart-items" id="cartItems">
+                            <div class="empty-cart" id="emptyCart">
+                                <i class="fas fa-shopping-bag"></i>
+                                <h3>Your Cart is Empty</h3>
+                                <p>Discover our collection of luxury handbags</p>
+                                <a href="#" class="btn btn-primary" onclick="showPage('shop')">Continue Shopping</a>
+                            </div>
+                        </div>
+                        <div class="cart-summary" id="cartSummary">
+                            <h3>Order Summary</h3>
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="cartSubtotal">$0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span>Free</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span id="cartTax">$0.00</span>
+                            </div>
+                            <hr>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span id="cartTotal">$0.00</span>
+                            </div>
+                            <div class="promo-code">
+                                <input type="text" placeholder="Promo code">
+                                <button>Apply</button>
+                            </div>
+                            <button class="btn btn-primary btn-block" onclick="showPage('checkout')">Proceed to Checkout</button>
+                            <div class="trust-badges">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-checkout" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Checkout</h1>
+                </div>
+            </div>
+            <div class="checkout-page">
+                <div class="container">
+                    <div class="checkout-steps">
+                        <div class="step active">
+                            <span class="step-number">1</span>
+                            <span class="step-label">Shipping</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <span class="step-label">Billing</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <span class="step-label">Payment</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">4</span>
+                            <span class="step-label">Review</span>
+                        </div>
+                    </div>
+                    <div class="checkout-layout">
+                        <div class="checkout-form">
+                            <div class="checkout-section">
+                                <h3>Shipping Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone</label>
+                                    <input type="tel" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    <input type="text" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Postal Code</label>
+                                        <input type="text" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Country</label>
+                                    <select required>
+                                        <option>United States</option>
+                                        <option>France</option>
+                                        <option>United Kingdom</option>
+                                        <option>Japan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="checkout-section">
+                                <h3>Payment Method</h3>
+                                <div class="payment-methods">
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" checked>
+                                        <i class="fab fa-cc-visa"></i>
+                                        <span>Credit Card</span>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment">
+                                        <i class="fab fa-cc-paypal"></i>
+                                        <span>PayPal</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Card Number</label>
+                                    <input type="text" placeholder="1234 5678 9012 3456">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Expiry Date</label>
+                                        <input type="text" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>CVV</label>
+                                        <input type="text" placeholder="123">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-block" onclick="showSuccessMessage()">Place Order</button>
+                        </div>
+                        <div class="checkout-summary">
+                            <h3>Your Order</h3>
+                            <div id="checkoutItems"></div>
+                            <hr>
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="checkoutSubtotal">$0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span>Free</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span id="checkoutTax">$0.00</span>
+                            </div>
+                            <hr>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span id="checkoutTotal">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>HERMÈS</h3>
+                    <p>Timeless elegance crafted with exceptional artistry since 1837.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('shop')">Handbags</a></li>
+                        <li><a href="#" onclick="showPage('shop')">Tote Bags</a></li>
+                        <li><a href="#" onclick="showPage('shop')">Crossbody</a></li>
+                        <li><a href="#" onclick="showPage('shop')">Travel</a></li>
+                        <li><a href="#" onclick="showPage('shop')">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+                        <li><a href="#" onclick="showPage('faq')">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hermès. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

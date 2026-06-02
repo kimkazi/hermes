@@ -1,0 +1,6 @@
+# Files we don't want to commit to Git
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+node_modules/
